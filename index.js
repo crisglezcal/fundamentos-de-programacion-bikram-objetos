@@ -6,7 +6,7 @@
 const Coche = {
     marca: "Seat",
     modelo: "Ibiza",
-    matrícula: "234567H",
+    matricula: "234567H",
 };
 
 const Casa = {
@@ -17,8 +17,8 @@ const Casa = {
 };
 
 const FullStackDeveloper = {
-    arrayLenguajes : ["HTML", "CSS", "JavaScript"],
-    arrayProyectos : ["Web", "Repositorio", "Aplicación"],
+    lenguajes : ["HTML", "CSS", "JavaScript"],
+    proyectos : ["Web", "Repositorio", "Aplicación"],
 };
 
 const Perro = {
@@ -35,14 +35,13 @@ const Perro = {
 }
 
 //Lectura de propiedades
+let marcaPortatil = Portatil.marca;
 
-const marcaPortatil = portatil.marca;
+let marcaPortatil2 = Portatil["marca"];
 
-const marcaPortatil2 = Portatil["marca"];
+let grupos = Concierto.grupos;
 
-const grupos = Concierto.grupos;
-
-const RGB = [Led.Rojo, Led.Verde, Led.Azul];
+let arrayRGB = [Led.Rojo, Led.Verde, Led.Azul];
 
 //Modificación de propiedades
 
@@ -50,7 +49,7 @@ Portatil.modelo = "P345";
 
 Concierto.cartelera.push = ("Guns N Roses");
 
-Concierto.fecha = newDate();
+Concierto.fecha = new Date();
 
 Impresora.imprimiendo = {
     nombreArchivo: "Receta",
@@ -66,18 +65,18 @@ Impresora.imprimiendo = {
 
 //Declaración
 
-Noticia = {
+const Noticia = {
     titular: "Playa inundada",
     cuerpo: "Se ha inundado una playa en Gijón"
 };
 
-Persona = {
+const Persona = {
     nombre: "Dolly",
     apellidos: "Parton Sánchez",
     edad: 67,
 };
 
-Avion = {
+const Avion = {
     numPasajeros: 285,
     despegar: function () {
         console.log ("Despegando");
@@ -90,11 +89,11 @@ Avion = {
     }
 };
 
-Paquete = {
+const Paquete = {
     arrayContenido: ["Caja", "Corchopán", "Cinta aislante"]
 }
 
-Pais = {
+const Pais = {
     numHabitantes: 5,
     continente: "Raticulín",
     gentilicio: "Raticulinos"
@@ -102,15 +101,15 @@ Pais = {
 
 //Lectura de propiedades
 
-const codError = O_Error.codigo;
+let codError = O_Error.codigo;
 
-const integrantes = grupos.integrantes;
+let integrantes = grupos.integrantes;
 
-const nivelesTinta = Impresora.tinta;
+let nivelesTinta = Impresora.tinta;
 
-const pixeles = Pantalla.pixeles;
+let pixeles = Pantalla.pixeles;
 
-const especificaciones = Movil["especificaciones"];
+let especificaciones = Movil["especificaciones"];
 
 //Modificacion de propiedades
 
